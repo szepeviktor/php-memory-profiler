@@ -9,11 +9,9 @@ env:
     global:
         - MEMPROF_CFLAGS='-Wall -Werror'
 jobs:
-    allow_failures:
-        - env: PHP_VERSION=8.0snapshot
     fast_finish: true
     include:
-        - env: PHP_VERSION=8.0snapshot
+        - env: PHP_VERSION=8.0.1
         - env: PHP_VERSION=7.4.12
         - env: PHP_VERSION=7.3.24
         - env: PHP_VERSION=7.2.19
